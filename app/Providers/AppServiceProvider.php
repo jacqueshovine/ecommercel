@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Eemi\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

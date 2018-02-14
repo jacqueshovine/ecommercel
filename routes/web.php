@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::get('/test', function () {
-    return 'test';
-});
+/* Création de l'URL et appel via NomController@methodeDuController */
+Route::get('/produits', 'ProduitController@listeProduits');
+Route::get('/formulaire', 'ProduitController@formulaireProduits');
+
+Route::get('/articles', 'ArticleController@listeArticles');
+

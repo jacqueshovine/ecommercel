@@ -1,9 +1,7 @@
 @extends('layout')
 
-@section('titre')
-    Les articles
-@endsection
+@section('titre', 'Accueil E-commerce')
 
 @section('contenu')
-    <p>C'est l'article n° </p>
+    <h1>Nous sommes dans la homepage</h1>
 @endsection

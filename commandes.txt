@@ -1,0 +1,19 @@
+Commandes utiles :
+
+*** Créer un controller (à la racine du dossier) ***
+php artisan make:controller NomController
+
+*** BDD : Créer une table MySQL par convention au pluriel ***
+*** Le fichier portant le nom [date]_create_produits_table.php est créé dans le dossier database/migrations ***
+php artisan make:migration create_produits_table --create=produits
+
+*** lancer la migration qui permet de créer les tables ***
+php artisan migrate
+
+*** si je désire revenir en arrière, j'utilise migrate:rollback ***
+*** précision : migrate:rollback exécute les méthodes down() dans les fichiers de migrations, tandis que migrate exécute les méthodes up() ***
+
+
+*** création du Model rattaché à ma table ***
+*** Le fichier est créé dans app/Produits.php ***
+php artisan make:model Produit
